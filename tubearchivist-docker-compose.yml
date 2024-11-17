@@ -6,7 +6,7 @@ services:
     container_name: ta-helper
     restart: unless-stopped
     image: ta-helper
-    build: ta-helper/
+    build: https://github.com/gebi/ta-helper.git#main
     command: uv run --no-cache /app/ta-helper-trigger.py
     user: "1000:1000"
     expose:
